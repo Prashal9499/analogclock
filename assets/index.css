@@ -1,0 +1,75 @@
+body,html{
+    font-family: 'Merriweather Sans', sans-serif;
+    height: auto;
+    background-position: center;
+    background-image: url(images/background.jpg);
+    background-image: no-repeat;
+}
+
+/* clock */
+#clock{
+    position: relative;
+    height: 680px;
+    width: 680px;
+    top: 10px;
+    margin: auto;
+    background: url(images/clock.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background-color: #000000;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 1%;
+    height: 26%;
+    top: 24%;
+    left: 49.6%;
+    opacity: 0.8;
+}
+
+#minute{
+    width: 1%;
+    height: 32%;
+    top: 18%;
+    left: 49.6%;
+    opacity: 0.8;
+}
+
+#second{
+    width: 2px;
+    height: 37%;
+    top: 13%;
+    left: 49.9%;
+    opacity: 0.8;
+    background-color: #ff0000;
+}
+
+.text{
+    text-align: center; 
+    padding-top: 200px;   
+}
+
+/* responsive css */
+@media only screen and (max-width: 768px){
+  #clock{
+    height: 380px;
+    width: 380px;
+    margin-top: 50%; 
+  }
+
+ h1.text{
+    text-align: center; 
+    padding-top: 115px;
+    font-size: 18px;
+  }
+
+  p.text{
+    text-align: center; 
+    padding-top: 110px;
+    font-size: 8px;
+  }
+}
